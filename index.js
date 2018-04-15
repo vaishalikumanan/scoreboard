@@ -5,7 +5,8 @@ $(document).ready(function() {
   //For each team, set up a button, progress bar and time adder thing
   for (var i = 0; i < teamNames.length; i++) {
     contents.innerHTML += "<div class = 'box'><div class='button name'>" + teamNames[i] + "</div><div class='bar'><div class='progress'></div></div><div class = 'other'><div class = 'button penalty'>00:00</div></div></div>";
-    if (teamNames[i].length > 17) {
+    //Two lines
+    if (teamNames[i].length > 22) {
       document.getElementsByClassName("name")[i].style.fontSize = "2.4vh";
       document.getElementsByClassName("name")[i].style.lineHeight = "3.5vh";
     }
@@ -19,7 +20,7 @@ $(document).ready(function() {
     $(".name").click(
       function() {
 
-        //Find the team...
+        //Find the team
         var index = teamNames.indexOf(this.innerHTML);
         var progress = document.getElementsByClassName("progress")[index];
         //Calculate the current width
@@ -112,8 +113,7 @@ $(document).ready(function() {
 
           function timer() {
             time[2]++;
-
-            //Prevent timer from doing stupid shit
+            
             if (time[2] == 100) {
               time[2] = 0;
               time[1]++;
