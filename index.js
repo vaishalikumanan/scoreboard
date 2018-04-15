@@ -1,6 +1,6 @@
 $(document).ready(function() {
   //Input team names here
-  var teamNames = ["Team Açia", "42", "Minecraft PVP math mod", "Turkish Ice Cream", "DO", "The Legendary Liver Scammers", "Talbot's Timbits", "Da Daring Dragons", "hen", "Sources of Error", "Lethargic Walnuts", "LeMao"];
+  var teamNames = ["Team Açia", "42", "Minecraft PVP math modddddddd ddddddddddddd", "Turkish Ice Cream", "DO", "The Legendary Liver Scammers", "Talbot's Timbits", "Da Daring Dragons", "hen", "Sources of Error", "Lethargic Walnuts", "LeMao"];
 
   //For each team, set up a button, progress bar and time adder thing
   for (var i = 0; i < teamNames.length; i++) {
