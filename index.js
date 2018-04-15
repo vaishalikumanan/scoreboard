@@ -1,26 +1,4 @@
 $(document).ready(function() {
-  //Full screen
-  var viewFullScreen = document.getElementById("view-fullscreen");
-  if (viewFullScreen) {
-    viewFullScreen.addEventListener("click", function() {
-      var docElm = document.documentElement;
-      if (docElm.mozRequestFullScreen) {
-        docElm.mozRequestFullScreen();
-      } else if (docElm.webkitRequestFullScreen) {
-        docElm.webkitRequestFullScreen();
-      }
-      viewFullScreen.style.display = "none";
-    }, false);
-  }
-
-  //Bring back the button
-  $(document).keydown(function(e) {
-    //Space key pressed
-    if (e.keyCode == 32) {
-      viewFullScreen.style.display = "block";
-    }
-  });
-
   //Input team names here
   var teamNames = ["Team Açia", "42", "Minecraft PVP math mod", "Turkish Ice Cream", "DO", "The Legendary Liver Scammers", "Talbot's Timbits", "Da Daring Dragons", "hen", "Sources of Error", "Lethargic Walnuts", "LeMao"];
 
