@@ -1,0 +1,75 @@
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.box {
+  height: 7vh;
+  margin: 1% 0%;
+}
+
+.name {
+  background-color: deepskyblue;
+  float: left;
+  display: inline-block;
+  width: 20%;
+}
+
+.bar {
+  display: inline-block;
+  width: 57%;
+  height: 100%;
+  background-color: #A9A9A9;
+  border-radius: 8px;
+}
+
+.progress {
+  width: 0%;
+  height: 100%;
+  background-color: #00cc66;
+  border-radius: 8px;
+}
+
+.other {
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+}
+
+.penalty {
+  float: left;
+  width: 100%;
+  background-color: red;
+}
+
+.button {
+  overflow: hidden;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 100%;
+  line-height: 7vh;
+  font-size: 2.5vh;
+  margin: 0 3vh;
+}
+
+.disabled {
+  pointer-events: none;
+  font-weight: bold;
+}
+
+#timer {
+  width: 96%;
+  text-align: center;
+  font-size: 7vh;
+  line-height: 13vh;
+}
+
+#contents {
+  height: 85vh;
+  overflow-y: auto;
+}
